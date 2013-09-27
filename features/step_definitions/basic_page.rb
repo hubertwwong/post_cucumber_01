@@ -5,7 +5,10 @@ Given(/^I visit "(.*?)"$/) do |arg1|
   visit arg1
 end
 
-Then(/^I see "(.*?)"$/) do |arg1|
-  #pending #blah
-  page.should have_content(arg1)
+Then(/^I see these things on the page$/) do |table|
+  # table is a Cucumber::Ast::Table
+  result_hash = table.hashes
+  result_hash.each do |result_param|
+    page.should have_content(result_param['page_text'])  
+  end
 end
