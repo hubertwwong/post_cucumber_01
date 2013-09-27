@@ -16,3 +16,6 @@ rake db:migrate RAILS_ENV='test'
 
 Run the 'cucumber' command to see the test.
 Test for cucumber is in the features directory.
+
+Its pretty simple. Baiscally a scaffold for a post resource.
+And cucumber is testing the index page to see if content is there.

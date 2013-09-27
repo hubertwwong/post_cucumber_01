@@ -2,24 +2,22 @@ Using the default profile...
 Feature: post
   Testing out cucumber in rails using the post resource.
 
-  Scenario: index                               # features/post.feature:4
-visiting http://localhost:3000/posts
-http://localhost:3000/
-    Given I visit "http://localhost:3000/posts" # features/step_definitions/basic_page.rb:1
-    Then I see these things on the page         # features/step_definitions/basic_page.rb:8
+  Scenario: index                       # features/post.feature:4
+    Given I visit "posts"               # features/step_definitions/basic_page.rb:1
+    Then I see these things on the page # features/step_definitions/basic_page.rb:11
       | page_text     |
       | Listing posts |
       | Title         |
 
 1 scenario (1 passed)
 2 steps (2 passed)
-0m8.281s
-Run options: --seed 38303
+0m8.643s
+Run options: --seed 15677
 
 # Running tests:
 
 
 
-Finished tests in 0.046361s, 0.0000 tests/s, 0.0000 assertions/s.
+Finished tests in 0.036835s, 0.0000 tests/s, 0.0000 assertions/s.
 
 0 tests, 0 assertions, 0 failures, 0 errors, 0 skips
