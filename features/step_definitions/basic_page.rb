@@ -1,6 +1,7 @@
 Given(/^I visit "(.*?)"$/) do |arg1|
   #pending #blah
-  puts "visiting " + arg1
+  $stdout.puts "visiting " + arg1
+  $stdout.puts ENV['url']
   visit arg1
 end
 

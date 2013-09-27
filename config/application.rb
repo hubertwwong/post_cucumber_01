@@ -29,5 +29,8 @@ module PostCucumber01
     config.generators do |g|
       g.test_framework :rspec
     end
+    
+    # Load application ENV vars and merge with existing ENV vars. Loaded here so can use values in initializers.
+    ENV.update YAML.load_file('config/app_config.yml')[Rails.env] rescue {}
   end
 end

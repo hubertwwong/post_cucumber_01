@@ -3,19 +3,20 @@ Feature: post
   Testing out cucumber in rails using the post resource.
 
   Scenario: index                               # features/post.feature:4
+visiting http://localhost:3000/posts
+http://localhost:3000/
     Given I visit "http://localhost:3000/posts" # features/step_definitions/basic_page.rb:1
-      visiting http://localhost:3000/posts
-    Then I see "Listing"                        # features/step_definitions/basic_page.rb:7
+    Then I see "Listing"                        # features/step_definitions/basic_page.rb:8
 
 1 scenario (1 passed)
 2 steps (2 passed)
-0m7.027s
-Run options: --seed 46720
+0m10.358s
+Run options: --seed 48812
 
 # Running tests:
 
 
 
-Finished tests in 0.076092s, 0.0000 tests/s, 0.0000 assertions/s.
+Finished tests in 0.148631s, 0.0000 tests/s, 0.0000 assertions/s.
 
 0 tests, 0 assertions, 0 failures, 0 errors, 0 skips
