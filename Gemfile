@@ -80,10 +80,11 @@ gem 'bcrypt-ruby'
 #
 # RSPEC
 # ===============================================================
-# run
+#
+# >> run
 # rails generate rspec:install
 #
-# load this into config/application.rb
+# >> load this into config/application.rb
 # for spec generators. 
 #
 # rspec generator
@@ -92,10 +93,20 @@ gem 'bcrypt-ruby'
 # end
 #
 #
+#
 # CAPYBARA
 # ===============================================================
 #
 # load this into spec_helper.rb for spec.
 # require 'capybara/rspec'
 #
+#
+#
+# GUARD
+# ===============================================================
+# 
+# >> install
+# guard init rspec
+#
+#  
 #
