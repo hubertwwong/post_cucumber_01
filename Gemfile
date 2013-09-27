@@ -44,6 +44,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# MY STUFF
+##############################################################################
+
 # some RVM installs don't have have readline support.
 # so install it just in case.
 gem 'rb-readline'
@@ -101,6 +104,14 @@ gem 'bcrypt-ruby'
 # require 'capybara/rspec'
 # 
 # 
+#
+# CUCUMBER
+# ===============================================================
+#
+# >> install
+# rails g cucumber:install
+#
+#
 # 
 # FACTORY GIRL
 # ===============================================================
@@ -119,6 +130,6 @@ gem 'bcrypt-ruby'
 # 
 # >> install
 # guard init rspec
-#
+# 
 #  
 #
