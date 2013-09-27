@@ -97,8 +97,20 @@ gem 'bcrypt-ruby'
 # CAPYBARA
 # ===============================================================
 #
-# load this into spec_helper.rb for spec.
+# load this into spec_helper.rb for spec to use with rspec.
 # require 'capybara/rspec'
+# 
+# 
+# 
+# FACTORY GIRL
+# ===============================================================
+#
+# >> load this into spec_helper.rb
+#
+# Factory girl config for RSpec
+# RSpec.configure do |config|
+#  config.include FactoryGirl::Syntax::Methods
+# end
 #
 #
 #
